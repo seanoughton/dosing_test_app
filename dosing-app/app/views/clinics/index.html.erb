@@ -1,0 +1,12 @@
+
+<h1> Here are all of the clinics <h1>
+<h4>
+   <ul>
+     <%@clinics.each do |clinic| %>
+       <li><%=link_to clinic.name, clinic%></li>
+     <%end%>
+   </ul>
+</h4>
+
+<h1>Add a new Clinic</h1>
+<%=link_to 'Add Clinic', new_clinic_url()%>

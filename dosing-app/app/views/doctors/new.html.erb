@@ -1,0 +1,21 @@
+<%= form_for @doctor, controller: 'doctors', action: 'create' do |f| %>
+
+  <%= f.label :first_name%>
+  <%= f.text_field :first_name %><br>
+
+  <%= f.label :last_name%>
+  <%= f.text_field :last_name %><br>
+
+  <%= f.label :badge_number%>
+  <%= f.text_field :badge_number %><br>
+
+
+
+  <%= f.label :clinic_id %>
+  <%= f.collection_select :clinic_id, Clinic.all,:id,:name %>
+
+
+  <br><br>
+
+  <%= f.submit  %>
+<% end %>

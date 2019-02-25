@@ -1,0 +1,21 @@
+<h1> Here is this Doctor's Info: <h1>
+<h4>
+  <ul>
+    <li>Name: <%= @doctor.first_name %> <%= @doctor.last_name %></li>
+    <li>Badge Number: <%= @doctor.badge_number %></li>
+  </ul>
+
+<h2>Here are all of the patients for this doctor:</h2>
+  <ul>
+    <% @doctor.patients.each do |patient| %>
+      <li><%=link_to patient.last_name, patient%></li>
+    <%end%>
+  </ul>
+
+
+<h1>Edit this Doctor</h1>
+<%=link_to 'Edit', edit_doctor_url%>
+
+<h1>Delete this Doctor</h1>
+
+<%=link_to "Delete", @doctor, method: :delete, data: {confirm: "Really?!"}%>

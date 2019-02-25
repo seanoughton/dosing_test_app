@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_02_25_201040) do
     t.string "first_name"
     t.string "last_name"
     t.integer "badge_number"
+    t.integer "clinic_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
