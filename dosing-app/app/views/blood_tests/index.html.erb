@@ -1,0 +1,13 @@
+
+<h1> Here are all of the Blood Tests <h1>
+<h4>
+   <ul>
+     <%@blood_tests.each do |blood_test| %>
+       <li> <%=link_to Patient.find(blood_test.patient_id).last_name, blood_test %>
+       </li>
+     <%end%>
+   </ul>
+</h4>
+
+<h1>Add a new Blood Test</h1>
+<%=link_to 'Add Blood Test', new_blood_test_url%>

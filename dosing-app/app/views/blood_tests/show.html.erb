@@ -1,0 +1,17 @@
+<h1> Here is this Blood Test's Info: <h1>
+<h4>
+  <ul>
+    <li>Date: <%= @blood_test.date %> </li>
+    <li>TSAT: <%= @blood_test.tsat %> </li>
+    <li>Ferrin: <%= @blood_test.ferrin %> </li>
+    <li>Patient: <%= @patient.first_name %> <%= @patient.last_name %> </li>
+  </ul>
+
+
+
+<h1>Edit this Blood Test</h1>
+<%=link_to 'Edit', edit_blood_test_url%>
+
+<h1>Delete this Blood Test</h1>
+
+<%=link_to "Delete", @blood_test, method: :delete, data: {confirm: "Really?!"}%>

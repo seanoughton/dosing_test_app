@@ -1,0 +1,20 @@
+<h1> Edit this Blood Test </h1>
+
+<%= form_for @blood_test, controller: 'blood_tests', action: 'update' do |f| %>
+
+  <%= f.label :date%>
+  <%= f.text_field :date %><br>
+
+  <%= f.label :tsat%>
+  <%= f.text_field :tsat %><br>
+
+  <%= f.label :ferrin%>
+  <%= f.text_field :ferrin %><br>
+
+
+  <%= f.label :patient_id %>
+  <%= f.collection_select :patient_id, Patient.all,:id,:last_name %>
+
+  <br><br>
+  <%= f.submit  %>
+<% end %>
