@@ -40,13 +40,13 @@ doctor_list = Doctor.all()
 
 
 patients = [
-  { first_name: 'Johann', last_name:'Helmont', patient_id:123456, date_of_birth:1971, sex:'male', doctor_id:doctor_list[0].id, clinic_id:clinic_list[0].id},
-  { first_name: 'Baldwin', last_name:'Haney', patient_id:7891011, date_of_birth:1971, sex:'male', doctor_id:doctor_list[1].id, clinic_id:clinic_list[1].id},
-  { first_name: 'William', last_name:'Petty', patient_id:12131416,date_of_birth:1971, sex:'male', doctor_id:doctor_list[2].id, clinic_id:clinic_list[2].id},
-  { first_name: 'Thomas', last_name:'Willis', patient_id:17181920,date_of_birth:1971, sex:'male', doctor_id:doctor_list[3].id, clinic_id:clinic_list[3].id},
-  { first_name: 'Anne', last_name:'Greene', patient_id:21222324,date_of_birth:1971, sex:'male', doctor_id:doctor_list[4].id, clinic_id:clinic_list[4].id},
-  { first_name: 'Fanny', last_name:'Burney', patient_id:25262728,date_of_birth:1971, sex:'male', doctor_id:doctor_list[5].id, clinic_id:clinic_list[5].id},
-  { first_name: 'Mary', last_name:'Mallon', patient_id:29303132,date_of_birth:1971, sex:'male', doctor_id:doctor_list[6].id, clinic_id:clinic_list[6].id}
+  { first_name: 'Johann', last_name:'Helmont', patient_number:123456, date_of_birth:1971, sex:'male', doctor_id:doctor_list[0].id, clinic_id:clinic_list[0].id},
+  { first_name: 'Baldwin', last_name:'Haney', patient_number:7891011, date_of_birth:1971, sex:'male', doctor_id:doctor_list[1].id, clinic_id:clinic_list[1].id},
+  { first_name: 'William', last_name:'Petty', patient_number:12131416,date_of_birth:1971, sex:'male', doctor_id:doctor_list[2].id, clinic_id:clinic_list[2].id},
+  { first_name: 'Thomas', last_name:'Willis', patient_number:17181920,date_of_birth:1971, sex:'male', doctor_id:doctor_list[3].id, clinic_id:clinic_list[3].id},
+  { first_name: 'Anne', last_name:'Greene', patient_number:21222324,date_of_birth:1971, sex:'male', doctor_id:doctor_list[4].id, clinic_id:clinic_list[4].id},
+  { first_name: 'Fanny', last_name:'Burney', patient_number:25262728,date_of_birth:1971, sex:'male', doctor_id:doctor_list[5].id, clinic_id:clinic_list[5].id},
+  { first_name: 'Mary', last_name:'Mallon', patient_number:29303132,date_of_birth:1971, sex:'male', doctor_id:doctor_list[6].id, clinic_id:clinic_list[6].id}
 ]
 
 patients.each do |patient|

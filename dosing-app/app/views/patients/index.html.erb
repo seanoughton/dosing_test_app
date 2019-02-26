@@ -1,0 +1,12 @@
+
+<h1> Here are all of the patients <h1>
+<h4>
+   <ul>
+     <%@patients.each do |patient| %>
+       <li><%=link_to patient.last_name, patient%></li>
+     <%end%>
+   </ul>
+</h4>
+
+<h1>Add a new Patient</h1>
+<%=link_to 'Add Patient', new_patient_url%>

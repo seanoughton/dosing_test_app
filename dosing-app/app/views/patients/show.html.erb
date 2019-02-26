@@ -1,0 +1,15 @@
+<h1> Here is this Patient's Info: <h1>
+<h4>
+  <ul>
+    <li>Name: <%= @patient.first_name %> <%= @patient.last_name %></li>
+    <li>Patient Number: <%= @patient.patient_number %></li>
+  </ul>
+
+
+
+<h1>Edit this Patient</h1>
+<%=link_to 'Edit', edit_patient_url%>
+
+<h1>Delete this Patient</h1>
+
+<%=link_to "Delete", @patient, method: :delete, data: {confirm: "Really?!"}%>
