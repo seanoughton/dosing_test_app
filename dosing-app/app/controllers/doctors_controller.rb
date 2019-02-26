@@ -2,43 +2,44 @@ class DoctorsController < ApplicationController
 
   def index
     @doctors = Doctor.all
+    render json: @doctors
   end
 
   def new
     @doctor  = Doctor.new
-    #render json: @project
+    render json: @doctor
   end
 
   def create
     @doctor = Doctor.new(doctor_params)
     @doctor.save
-    # render json: @project, status: 201
-    redirect_to doctors_url
+    render json: @doctor, status: 201
+    # redirect_to doctors_url
   end
 
   def show
     @doctor = Doctor.find(params[:id])
-    # render json: @project
+    render json: @doctor
 
   end
 
   def edit
     @doctor = Doctor.find(params[:id])
-    #render json: @project
+    render json: @doctor
   end
 
   def update
     @doctor = Doctor.find(params[:id])
     @doctor.update(doctor_params)
-    # render json: @project
-    redirect_to doctors_url
+    render json: @doctor
+    # redirect_to doctors_url
   end
 
   def destroy
     @doctor = Doctor.find(params[:id])
     @doctor.destroy
-    # render json: {project_id: params[:id]}
-    redirect_to doctors_url
+    render json: {doctor_id: params[:id]}
+    # redirect_to doctors_url
   end
 
   private
